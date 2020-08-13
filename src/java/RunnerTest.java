@@ -5,13 +5,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/features",
+        features = "src/features",
         glue = "ru.savkk.test",
-        tags = "@all",
-        dryRun = false,
-        strict = false,
-        snippets = SnippetType.UNDERSCORE;
-//        name = "^Успешное|Успешная.*"
+        tags = "@withdrawal",
+        snippets = SnippetType.CAMELCASE
 )
 public class RunnerTest {
 }
